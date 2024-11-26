@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harmonium</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="keyboard">
+        <div class="Mandra">
+            <dic class="section-one">
+                <div class="two-upper-key">
+                    <button class="black-key" onclick="handleKeyPress('s')" id="s">S</button>
+                    <button class="black-shadow-key"></button>
+                    <button class="black-key" onclick="handleKeyPress('d')" id="d">D</button>
+                </div>
+                <div class="lower-key">
+                    <button class="white-key" onclick="handleKeyPress('z')" id="z">Z</button>
+                    <button class="white-key " onclick="handleKeyPress('x')" id="x">X</button>
+                    <button class="white-key" onclick="handleKeyPress('c')" id="c">C</button>
+                </div>
+            </dic>
+            <div class="section-two">
+                <div class="three-upper-key">
+                    <button class="black-key" onclick="handleKeyPress('g')" id="g">G</button>
+                    <button class="black-shadow-key"></button>
+                    <button class="black-key" onclick="handleKeyPress('h')" id="h">H</button>
+                    <button class="black-shadow-key"></button>
+                    <button class="black-key" onclick="handleKeyPress('j')" id="j">J</button>
+                </div>
+                <div class="lower-key">
+                    <button class="white-key" onclick="handleKeyPress('v')" id="v">V</button>
+                    <button class="white-key " onclick="handleKeyPress('b')" id="b">B</button>
+                    <button class="white-key" onclick="handleKeyPress('n')" id="n">N</button>
+                    <button class="white-key" onclick="handleKeyPress('m')" id="m">M</button>
+                </div>
+        </div>
+
+        <div class="Madhya">
+            <dic class="section-one">
+                <div class="two-upper-key">
+                    <button class="black-key" onclick="handleKeyPress('l')" id="l">L</button>
+                    <button class="black-shadow-key"></button>
+                    <button class="black-key" onclick="handleKeyPress(';')" id=";">;</button>
+                </div>
+                <div class="lower-key">
+                    <button class="white-key" onclick="handleKeyPress(',')" id=",">,</button>
+                    <button class="white-key " onclick="handleKeyPress('.')" id=".">.</button>
+                    <button class="white-key" onclick="handleKeyPress('/')" id="/">/</button>
+                </div>
+            </dic>
+            <div class="section-two">
+                <div class="three-upper-key">
+                    <button class="black-key" onclick="handleKeyPress('2')" id="2">2</button>
+                    <button class="black-shadow-key"></button>
+                    <button class="black-key" onclick="handleKeyPress('3')" id="3">3</button>
+                    <button class="black-shadow-key"></button>
+                    <button class="black-key" onclick="handleKeyPress('4')" id="4">4</button>
+                </div>
+                <div class="lower-key">
+                    <button class="white-key"onclick="handleKeyPress('q')" id="q">Q</button>
+                    <button class="white-key "onclick="handleKeyPress('w')" id="w">W</button>
+                    <button class="white-key"onclick="handleKeyPress('e')" id="e">E</button>
+                    <button class="white-key" onclick="handleKeyPress('r')" id="r">R</button>
+                </div>
+        </div>
+        <div class="Taar">
+            <dic class="section-one">
+                <div class="two-upper-key">
+                    <button class="black-key" onclick="handleKeyPress('6')" id="6">6</button>
+                    <button class="black-shadow-key"></button>
+                    <button class="black-key" onclick="handleKeyPress('7')" id="7">7</button>
+                </div>
+                <div class="lower-key">
+                    <button class="white-key" onclick="handleKeyPress('t')" id="t">T</button>
+                    <button class="white-key "onclick="handleKeyPress('y')" id="y">Y</button>
+                    <button class="white-key" onclick="handleKeyPress('u')" id="u">U</button>
+                </div>
+            </dic>
+            <div class="section-two">
+                <div class="three-upper-key">
+                    <button class="black-key" onclick="handleKeyPress('9')" id="9">9</button>
+                    <button class="black-shadow-key"></button>
+                    <button class="black-key" onclick="handleKeyPress('0')" id="0">0</button>
+                    <button class="black-shadow-key"></button>
+                    <button class="black-key" onclick="handleKeyPress('-')" id="-">-</button>
+                </div>
+                <div class="lower-key">
+                    <button class="white-key " onclick="handleKeyPress('i')" id="i">I</button>
+                    <button class="white-key" onclick="handleKeyPress('o')" id="o">O</button>
+                    <button class="white-key" onclick="handleKeyPress('p')" id="p">P</button>
+                    <button class="white-key" onclick="handleKeyPress('[')" id="[">[</button>
+                </div>
+        </div>
+
+        <div class="sounds">
+           <audio type="audio/mp3" id="z-key">
+            <source src="sound/Z.m4a">
+           </audio>
+           <audio src="sound/X.m4a" type="audio/mp3" id="x-key"></audio>
+           <audio src="sound/C.m4a" type="audio/mp3" id="c-key"></audio>
+           <audio src="sound/V.m4a" type="audio/mp3" id="v-key"></audio>
+           <audio src="sound/B.m4a" type="audio/mp3" id="b-key"></audio>
+           <audio src="sound/N.m4a" type="audio/mp3" id="n-key"></audio>
+           <audio src="sound/M.m4a" type="audio/mp3" id="m-key"></audio>
+           <audio src="sound/,.m4a" type="audio/mp3" id=",-key"></audio>
+           <audio src="sound/s.m4a" type="audio/mp3" id="s-key"></audio>
+           <audio src="sound/d.m4a" type="audio/mp3" id="d-key"></audio>
+           <audio src="sound/g.m4a" type="audio/mp3" id="g-key"></audio>
+           <audio src="sound/h.m4a" type="audio/mp3" id="h-key"></audio>
+           <audio src="sound/j.m4a" type="audio/mp3" id="j-key"></audio>
+           <audio src="sound/fullstop.m4a" type="audio/mp3" id="fullstop-key"></audio>
+        </div>
+
+        <script src="script.js"></script>
+        <script src="sound.js"></script>
+</body>
+
+</html>
